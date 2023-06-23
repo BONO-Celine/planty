@@ -1,0 +1,19 @@
+/* Import de la font Syne depuis Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
+
+
+
+/* Application de la font Syne sur tous les éléments de la page */
+body * {
+   font-family: 'Syne', sans-serif;
+}
+/* Couleur des paragraphes */
+p {
+   color: #000000;
+}
+
+.page-id-75 {
+    background-color: #3B8E46;
+    }
+
+
