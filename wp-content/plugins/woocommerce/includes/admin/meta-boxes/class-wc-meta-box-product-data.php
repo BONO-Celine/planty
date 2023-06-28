@@ -56,6 +56,7 @@ class WC_Meta_Box_Product_Data {
 		/* phpcs:disable WooCommerce.Commenting.CommentHooks.MissingHookComment */
 		return apply_filters(
 			'product_type_options',
+<<<<<<< Updated upstream
 			array(
 				'virtual'      => array(
 					'id'            => '_virtual',
@@ -72,6 +73,9 @@ class WC_Meta_Box_Product_Data {
 					'default'       => 'no',
 				),
 			)
+=======
+			wc_get_default_product_type_options(),
+>>>>>>> Stashed changes
 		);
 		/* phpcs: enable */
 	}

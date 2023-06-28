@@ -11,6 +11,7 @@ return array(
 		'path'    => array( $vendorDir . '/composer/installers/src/Composer/Installers' )
 	),
 	'Automattic\\WooCommerce\\StoreApi\\' => array(
+<<<<<<< Updated upstream
 		'version' => '10.2.3.0',
 		'path'    => array( $baseDir . '/src/StoreApi' )
 	),
@@ -20,6 +21,17 @@ return array(
 	),
 	'Automattic\\WooCommerce\\Blocks\\' => array(
 		'version' => '10.2.3.0',
+=======
+		'version' => '10.2.4.0',
+		'path'    => array( $baseDir . '/src/StoreApi' )
+	),
+	'Automattic\\WooCommerce\\Blocks\\Tests\\' => array(
+		'version' => '10.2.4.0',
+		'path'    => array( $baseDir . '/tests/php' )
+	),
+	'Automattic\\WooCommerce\\Blocks\\' => array(
+		'version' => '10.2.4.0',
+>>>>>>> Stashed changes
 		'path'    => array( $baseDir . '/src' )
 	),
 	'Automattic\\Jetpack\\Autoloader\\' => array(

@@ -25,6 +25,7 @@ class AttributeFilter extends AbstractBlock {
 		parent::enqueue_data( $attributes );
 		$this->asset_data_registry->add( 'attributes', array_values( wc_get_attribute_taxonomies() ), true );
 	}
+<<<<<<< Updated upstream
 
 	/**
 	 * Get the frontend script handle for this block type.
@@ -34,4 +35,6 @@ class AttributeFilter extends AbstractBlock {
 	protected function get_block_type_script( $key = null ) {
 		return null;
 	}
+=======
+>>>>>>> Stashed changes
 }

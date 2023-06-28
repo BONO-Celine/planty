@@ -109,7 +109,11 @@ class Package {
 				NewPackage::class,
 				function ( $container ) {
 					// leave for automated version bumping.
+<<<<<<< Updated upstream
 					$version = '10.2.3';
+=======
+					$version = '10.2.4';
+>>>>>>> Stashed changes
 					return new NewPackage(
 						$version,
 						dirname( __DIR__ ),

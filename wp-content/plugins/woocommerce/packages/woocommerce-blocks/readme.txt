@@ -4,7 +4,11 @@ Tags: gutenberg, woocommerce, woo commerce, products, blocks, woocommerce blocks
 Requires at least: 6.2
 Tested up to: 6.2
 Requires PHP: 7.3
+<<<<<<< Updated upstream
 Stable tag: 10.2.3
+=======
+Stable tag: 10.2.4
+>>>>>>> Stashed changes
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -81,6 +85,15 @@ Release and roadmap notes available on the [WooCommerce Developers Blog](https:/
 
 == Changelog ==
 
+<<<<<<< Updated upstream
+=======
+= 10.2.4 - 2023-06-22 =
+
+#### Bug Fixes
+
+- Fix filter blocks using the old markup not rendering and fix missing translations in those blocks. ([9954](https://github.com/woocommerce/woocommerce-blocks/pull/9954))
+
+>>>>>>> Stashed changes
 = 10.2.3 - 2023-06-09 =
 
 #### Bug Fixes

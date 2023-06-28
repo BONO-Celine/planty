@@ -4,7 +4,11 @@ Tags: online store, ecommerce, shop, shopping cart, sell online, storefront, che
 Requires at least: 6.1
 Tested up to: 6.2
 Requires PHP: 7.3
+<<<<<<< Updated upstream
 Stable tag: 7.8.0
+=======
+Stable tag: 7.8.1
+>>>>>>> Stashed changes
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -163,6 +167,7 @@ WooCommerce comes with some sample data you can use to see how products look; im
 
 == Changelog ==
 
+<<<<<<< Updated upstream
 = 7.8.0 2023-06-13 =
 
 **WooCommerce**
@@ -328,6 +333,16 @@ WooCommerce comes with some sample data you can use to see how products look; im
 * Enhancement - Print blocks-based CSS classes only when a FSE theme is used [[#37631]](https://github.com/woocommerce/woocommerce/pull/37631)
 * Enhancement - Rename tracks event product_attributes_add to product_attributes_save on the product page and update attributes [[#38278]](https://github.com/woocommerce/woocommerce/pull/38278)
 * Enhancement - When deleting an administrator user, any existing webhook(s) owned to the user being deleted are re-assigned to the nominated user if the "Attribute all content to" option is chosen, or re-assigned to user id zero. This helps avoid `woocommerce_rest_cannot_view` webhook payload errors. [[#37814]](https://github.com/woocommerce/woocommerce/pull/37814)
+=======
+= 7.8.1 2023-06-27 =
+
+**WooCommerce**
+
+* Update - Update WooCommerce Blocks to 10.2.4 [#38891](https://github.com/woocommerce/woocommerce/pull/38891)
+* Fix - Do not show "Adding new attribute failed" error message when loading of product screens is interrupted by page unload. [[#38815]](https://github.com/woocommerce/woocommerce/pull/38815)
+* Tweak - Always pass default product type options to product_type_options filter. [[#38854]](https://github.com/woocommerce/woocommerce/pull/38854)
+
+>>>>>>> Stashed changes
 
 
 [See changelog for all versions](https://raw.githubusercontent.com/woocommerce/woocommerce/trunk/changelog.txt).

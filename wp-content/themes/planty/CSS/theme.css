@@ -17,3 +17,100 @@ p {
     }
 
 
+<<<<<<< Updated upstream
+=======
+/* HEADER */
+
+
+
+#site-header.sticky-top {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    background-color: #ffffff;
+ }
+
+ #masthead .ast-container, .site-header-focus-item {
+    padding-right: 0px;
+}
+ 
+ li.menu-item a {
+    color: #000000 !important;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+ }
+ 
+ li.menu-item a:hover,
+ li.menu-item.current-menu-item a {
+    color: #000000 !important;
+    text-decoration: none !important;
+    font-size: 13px;
+    font-weight: 700;
+ }
+
+/* bouton commander */
+.ast-custom-button {
+    color: #ffffff !important;
+    background-color: #DC9F96;
+    text-decoration: none !important;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    height: 80px;
+    width: 236px;
+    border-radius: 0%;
+ }
+
+ /* Footer lien */
+
+ .footer-widget-area a {
+    color: #000000 !important;
+    text-decoration: none !important;
+    font-size: 16px;
+    font-weight: 400;
+ }
+
+ .footer-widget-area a:hover {
+    color: #000000 !important;
+    text-decoration: none !important;
+    font-size: 13px;
+    font-weight: 700;
+ }
+
+
+  /* footer */
+
+  .site-below-footer-wrap {
+    background-color: #ffffff;
+    height: 60px;
+ }
+
+
+
+ /* blocs avec canette */
+
+
+
+
+
+ .drink-plants-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .drink {
+    
+  }
+ 
+
+.right-plant {
+		position: relative;
+ }
+
+ .left-plant {
+		position: relative;
+ }
+
+>>>>>>> Stashed changes
