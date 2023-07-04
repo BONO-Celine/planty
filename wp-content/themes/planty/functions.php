@@ -24,3 +24,16 @@ function child_enqueue_styles() {
 }
 
 add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 15 );
+
+
+
+/*    hook       */
+
+
+add_filter( 'wp_nav_menu_items', 'add_admin_item_to_nav_menu', 10, 2 );
+function add_admin_item_to_nav_menu( $items, $args ) {
+    if (is_user_logged_in() && $args->menu == 1) {
+        $items .= '<li class="menu-item"><a href="'. esc_url( home_url( '/' ) ). 'wp-admin/'.'">Admin</a></li>';
+    }
+    return $items;
+}
