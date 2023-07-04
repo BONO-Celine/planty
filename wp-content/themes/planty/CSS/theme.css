@@ -17,6 +17,8 @@ p {
     }
 
 
+<<<<<<< Updated upstream
+=======
 /* HEADER */
 
 
@@ -83,3 +85,32 @@ p {
     background-color: #ffffff;
     height: 60px;
  }
+
+
+
+ /* blocs avec canette */
+
+
+
+
+
+ .drink-plants-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .drink {
+    
+  }
+ 
+
+.right-plant {
+		position: relative;
+ }
+
+ .left-plant {
+		position: relative;
+ }
+
+>>>>>>> Stashed changes
