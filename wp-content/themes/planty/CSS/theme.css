@@ -95,22 +95,6 @@ p {
 	z-index: 2;
  }
 
-/* supprimer effet au survol sur le texte des images */
-.wp-block-uagb-image--layout-overlay__inner .uagb-image-heading h2:hover {
-    transition: none !important;
-    transform: none !important; 
-    -webkit-transform: none;
-    -moz-transform: none;
-    -o-transform: none;
-
-}
-
-
-
-
-
-
-
 
 
 
@@ -147,7 +131,3 @@ padding-left: 20px;
 #wpcf7-f162-p75-o1 .city p {
     margin-bottom: 0px;
 }
-
-
-
-
