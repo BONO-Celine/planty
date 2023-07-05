@@ -16,29 +16,16 @@ p {
     background-color: #3B8E46;
     }
 
-
-<<<<<<< Updated upstream
-=======
+/* ------------------------------------------------------ */
 /* HEADER */
+/* ------------------------------------------------------ */
 
-
-
-#site-header.sticky-top {
-    position: sticky;
-    z-index: 10;
-    top: 0;
-    background-color: #ffffff;
- }
-
- #masthead .ast-container, .site-header-focus-item {
-    padding-right: 0px;
-}
- 
  li.menu-item a {
     color: #000000 !important;
     font-size: 16px;
     font-weight: 400;
     display: inline-block;
+    margin-right: 50px;
  }
  
  li.menu-item a:hover,
@@ -48,6 +35,8 @@ p {
     font-size: 13px;
     font-weight: 700;
  }
+
+
 
 /* bouton commander */
 .ast-custom-button {
@@ -62,9 +51,24 @@ p {
     border-radius: 0%;
  }
 
- /* Footer lien */
+ #masthead .ast-container, .site-header-focus-item {
+    padding-right: 0px;
+}
 
- .footer-widget-area a {
+/* ------------------------------------------------------ */
+/* FOOTER */
+/* ------------------------------------------------------ */
+
+  /* footer */
+
+  .site-below-footer-wrap {
+    background-color: #ffffff;
+    height: 60px;
+ }
+
+  /* Footer lien */
+
+  .footer-widget-area a {
     color: #000000 !important;
     text-decoration: none !important;
     font-size: 16px;
@@ -79,38 +83,51 @@ p {
  }
 
 
-  /* footer */
 
-  .site-below-footer-wrap {
-    background-color: #ffffff;
-    height: 60px;
+/* ------------------------------------------------------ */
+/* PAGE ACCUEIL */
+/* ------------------------------------------------------ */
+
+  /* positionnement de la cannette de boisson au 1er plan */
+
+.drink {
+	position: absolute;
+	z-index: 2;
  }
 
 
 
- /* blocs avec canette */
 
 
+   /* tests formulaire */
+ .forminator-ui#forminator-module-280.forminator-design--flat .forminator-repeater-field{
+    background-color: transparent !important;
+     }
 
 
+/* contact form 7 */
 
- .drink-plants-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .drink {
-    
-  }
- 
+#wpcf7-f162-p75-o1 .box-form-order {
+    display: grid;                     /* affichage en grille */
+    grid-template-columns: auto auto;
+}
 
-.right-plant {
-		position: relative;
- }
+#wpcf7-f162-p75-o1 .box-delivery {
+border-left: 1px solid;
+border-color: #ffffff;
+padding-left: 20px;
+}
 
- .left-plant {
-		position: relative;
- }
+#wpcf7-f162-p75-o1 .box-infos {
+    padding-right: 20px;
+}
 
->>>>>>> Stashed changes
+#wpcf7-f162-p75-o1 .button-order {
+   display: flex;
+   justify-content: center;
+   margin-top: 30px;
+}
+
+#wpcf7-f162-p75-o1 .city p {
+    margin-bottom: 0px;
+}

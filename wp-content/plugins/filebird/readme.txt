@@ -4,7 +4,7 @@ Donate link: https://codecanyon.net/item/media-folders-manager-for-wordpress/217
 Tags: wordpress media library folders, media library folders, media folder, file manager, folders, wp media folder, wp media folders, wordpress media folders, wordpress media library, wordpress media manager, media manager, firebird
 Requires at least: 3.0
 Tested up to: 6.2.2
-Stable tag: 5.4.3
+Stable tag: 5.4.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -192,6 +192,11 @@ Happy Organizing! 😍
 
 
 == Changelog ==
+
+= Jul 3, 2023 – Version 5.4.4 =
+- Added: Compatible with text block of UX builder (Theme Flatsome)
+- Fixed: Drop item when a subfolder is deleted
+- Fixed: Conpatible with Twenty twenty three theme
 
 = Jun 27, 2023 - Version 5.4.3 =
 - Fixed: Conflict with plugin CMS Tree Page View
