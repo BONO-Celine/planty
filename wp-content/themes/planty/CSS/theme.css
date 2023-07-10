@@ -97,6 +97,18 @@ p {
 
 
 
+/* supprimer effet au survol sur le texte des images */
+.wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
+   transition: none !important;
+   transform: none !important; 
+
+      color: #fff;
+      /* transition: transform 0.35s, opacity 0.35s ease-in-out; */
+      /* transform: translate3d(0, 24px, 0); */
+  }
+
+
+
 
 
    /* tests formulaire */
@@ -131,3 +143,101 @@ padding-left: 20px;
 #wpcf7-f162-p75-o1 .city p {
     margin-bottom: 0px;
 }
+
+#wpcf7-f162-p75-o1 .quantities-boxes .wpcf7-number {
+   width: 51px !important;
+   height: 56px;
+   padding: 5px;
+   border-radius: 5px;
+ }
+
+
+#wpcf7-f162-p75-o1 .quantities-boxes {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+
+
+ /*test autre formulaire*/
+
+
+ 
+/* positionnement boutons quantités */
+/*#nex-forms .input-group {
+   display: flex !important;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   flex-direction: column-reverse;
+   align-content: flex-start;
+   align-items: flex-end;
+}
+
+
+ /*#nex-forms .input-group {
+   display: flex !important;
+   flex-direction: row !important;
+   align-items: center;
+}*/
+
+/*#nex-forms #spinner {
+width: 25% !important;
+height: 56px;
+}
+
+
+element.style {
+   background: #fff;
+   box-shadow: #00000033 0px 7px 16px 0px;
+   border-radius: 4px;
+   padding: 30px;
+   border-color: #ddd;
+}
+
+#nex-forms .inner-canvas-container button.btn.bootstrap-touchspin-up {
+height: 28px;
+
+}
+
+#nex-forms .inner-canvas-container button.btn.bootstrap-touchspin-down {
+height: 28px;
+   
+}
+
+
+
+#nex-forms .custom-text {
+   color:#ffffff !important;
+   font-weight: 700;
+}
+
+ /*couleurs boutons formulaire*/
+
+#nex-forms .btn-default {
+   background-color: #E0B9B4 !important;
+
+}
+#nex-forms .btn-default:hover {
+   background-color: #C02E44 !important;
+
+}
+
+
+/* positionnement boutons OK */
+#nex-forms .col-sm-3 {
+    width: 25%;
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+
+/* #nex-forms .input-group-btn .btn .btn-default .bootstrap-touchspin-down {
+   display: flex !important;
+   flex-direction: column !important;
+   justify-content: space-between;
+}
+*/
