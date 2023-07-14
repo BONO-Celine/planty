@@ -1,7 +1,9 @@
 /* Import de la font Syne depuis Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
 
-
+body {
+   min-width: 320px;
+}
 
 /* Application de la font Syne sur tous les éléments de la page */
 body * {
@@ -97,147 +99,314 @@ p {
 
 
 
-/* supprimer effet au survol sur le texte des images */
+/* supprimer effet au survol sur le texte en superposition des images */
 .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
    transition: none !important;
    transform: none !important; 
-
-      color: #fff;
+   color: #fff;
       /* transition: transform 0.35s, opacity 0.35s ease-in-out; */
       /* transform: translate3d(0, 24px, 0); */
   }
 
 
+/* Désactiver lien et curseur sur le texte en supperposition des images */
+.wp-block-uagb-image--layout-overlay-link {
+   cursor: default;
+   pointer-events: none;
+}
 
+/* Supprimer la marge du bas sur le texte en supperposition des images */
+.uagb-image-heading {
+	margin-bottom: 0px !important;
+}
 
-
-   /* tests formulaire */
- .forminator-ui#forminator-module-280.forminator-design--flat .forminator-repeater-field{
-    background-color: transparent !important;
-     }
-
-
+/* ------------------------------------------------------- */
 /* contact form 7 */
+/* ------------------------------------------------------- */
 
+/* Bordure du haut vos commandes */
+#wpcf7-f162-p75-o1 .cf7-order-form { 
+   border-top: 1px solid;
+   border-color: white;
+}
+
+/* Couleur des titres */
+#wpcf7-f162-p75-o1 h3 { 
+   color: #ffffff;
+}
+
+/* Conteneur global partie commande  */
+#wpcf7-f162-p75-o1 .quantities-boxes {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   border-bottom: 1px solid;
+   border-color: #ffffff;
+   margin-bottom: 30px;
+ }
+
+ /* Images fruits */
+ #wpcf7-f162-p75-o1 .quantities-boxes img {
+   height: 128px;
+}
+
+/* Elements superposés */
+#wpcf7-f162-p75-o1 .superposed-elements-fraise {
+   /*position: absolute;*/
+   background-image: url(http://localhost/planty/wp-content/uploads/2023/06/jeremy-bezanger-0QgbyZdhX7k-unsplash-1.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   height: 128px;
+   width: 192px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#wpcf7-f162-p75-o1 .superposed-elements-pamplemousse {
+   background-image: url(http://localhost/planty/wp-content/uploads/2023/06/estudio-bloom-tOitjphtIXU-unsplash-1.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   height: 128px;
+   width: 192px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#wpcf7-f162-p75-o1 .superposed-elements-framboise {
+   background-image: url(http://localhost/planty/wp-content/uploads/2023/06/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   height: 128px;
+   width: 192px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#wpcf7-f162-p75-o1 .superposed-elements-citron {
+   background-image: url(http://localhost/planty/wp-content/uploads/2023/06/estudio-bloom-ezqnxsqUZ80-unsplash-1.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   height: 128px;
+   width: 192px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#wpcf7-f162-p75-o1 .superposed-elements {
+
+
+}
+
+#wpcf7-f162-p75-o1 .superposed-elements h2 {
+   font-size: 20px;
+   color: #ffffff;
+}
+
+/* Conteneur global par variété */
+#wpcf7-f162-p75-o1 .fruit-box  {
+   display: flex;
+   flex-direction: column;
+}
+
+#wpcf7-f162-p75-o1 .quantity-box  {
+   display: flex;
+   margin-top: 10px;
+}
+
+/* Boutons ok */
+#wpcf7-f162-p75-o1 .btn-ok  {
+   margin-left: 10px;
+   height: 56px;
+   width: 100px;
+}
+
+
+/* Redimensionnement des champs nombres */
+#wpcf7-f162-p75-o1 .quantities-boxes .wpcf7-number {
+   width: 51px !important;
+   height: 56px;
+   padding: 5px;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+   text-align: center;
+ }
+
+
+
+/* Conteneur boutons + et - */
+#wpcf7-f162-p75-o1 .quantities-buttons  {
+   margin: 0;
+}
+
+#wpcf7-f162-p75-o1 .quantities-buttons p {
+   display: flex;
+   margin-block-start: 0px;
+   flex-direction: column;
+}
+
+/* Boutons + */
+#wpcf7-f162-p75-o1 .btn-plus  {
+   height: 28px;
+   border-bottom: 1px solid #ffffff;
+   width: 31px;
+   padding: 0;
+   border-top-left-radius: 0;
+   border-bottom-right-radius: 0;
+   border-bottom-left-radius: 0;
+   background-color: #DC9F96;
+}
+
+/* Boutons - */
+#wpcf7-f162-p75-o1 .btn-minus  {
+   height: 28px;
+   width: 31px;
+   padding: 0;
+   margin-top: -37px;
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
+   border-top-right-radius: 0;
+   background-color: #DC9F96;
+}
+
+
+ /* Redimensionnement de la hauteur des champs dans infos et livraison */
+ #wpcf7-f162-p75-o1 .box-form-order .wpcf7-form-control {
+   display: flex;
+   height: 71px;
+   width: 383px;
+}
+
+/* Affichage des 2 colonnes d'informations client */
 #wpcf7-f162-p75-o1 .box-form-order {
-    display: grid;                     /* affichage en grille */
-    grid-template-columns: auto auto;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+}
+#wpcf7-f162-p75-o1 .box-form-order label {
+   color: #ffffff;
 }
 
+/* Padding et bordure à gauche sur conteneur livraison */
 #wpcf7-f162-p75-o1 .box-delivery {
-border-left: 1px solid;
-border-color: #ffffff;
-padding-left: 20px;
-}
+   border-left: 1px solid;
+   border-color: #ffffff;
+   padding-left: 30px;
+   }
 
+/* Padding à droite sur conteneur infos */
 #wpcf7-f162-p75-o1 .box-infos {
-    padding-right: 20px;
+   padding-right: 30px;
 }
 
+/* Suppression de la marge du bas sous le champ ville */
+#wpcf7-f162-p75-o1 .city p {
+   margin-bottom: 0px;
+}
+
+ /* Angles arrondis des champs dans infos et livraison */
+#wpcf7-f162-p75-o1 .box-form-order .wpcf7-form-control {
+   border-radius: 7px;
+}
+
+
+ /* Bouton commander */
 #wpcf7-f162-p75-o1 .button-order {
    display: flex;
    justify-content: center;
    margin-top: 30px;
 }
 
-#wpcf7-f162-p75-o1 .city p {
-    margin-bottom: 0px;
+.button-order input {
+height: 55px;
+width: 198px;
+margin-left: 72px;  /* supprimer le decalage dû au spinner de chargement */
 }
 
-#wpcf7-f162-p75-o1 .quantities-boxes .wpcf7-number {
-   width: 51px !important;
-   height: 56px;
-   padding: 5px;
-   border-radius: 5px;
- }
 
 
-#wpcf7-f162-p75-o1 .quantities-boxes {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
- }
+/* ------------------------------------------------------- */
+/******************* Media queries *************************/
+/* ------------------------------------------------------- */
 
-
-
- /*test autre formulaire*/
-
-
+/* Small devices (entre 320 et 921px) */
+@media (min-width: 320px) and (max-width: 921px) {
+   #wpcf7-f162-p75-o1 .btn-minus  {
  
-/* positionnement boutons quantités */
-/*#nex-forms .input-group {
-   display: flex !important;
-   flex-wrap: wrap;
-   justify-content: flex-start;
-   flex-direction: column-reverse;
-   align-content: flex-start;
-   align-items: flex-end;
-}
-
-
- /*#nex-forms .input-group {
-   display: flex !important;
-   flex-direction: row !important;
-   align-items: center;
-}*/
-
-/*#nex-forms #spinner {
-width: 25% !important;
-height: 56px;
-}
-
-
-element.style {
-   background: #fff;
-   box-shadow: #00000033 0px 7px 16px 0px;
-   border-radius: 4px;
-   padding: 30px;
-   border-color: #ddd;
-}
-
-#nex-forms .inner-canvas-container button.btn.bootstrap-touchspin-up {
-height: 28px;
-
-}
-
-#nex-forms .inner-canvas-container button.btn.bootstrap-touchspin-down {
-height: 28px;
+      margin-top: -34px;
    
+       }
+}
+
+@media (min-width: 320px) and (max-width: 992px){ 
+
+
+   .page-id-75 .wp-block-group {
+      padding: 50px 0;
+   }
+   
+
+/* ------------------------------------------------------- */
+/* contact form 7 */
+/* ------------------------------------------------------- */
+
+/* Bordure du haut vos commandes */
+#wpcf7-f162-p75-o1 .cf7-order-form { 
+padding-top: 30px;
 }
 
 
-
-#nex-forms .custom-text {
-   color:#ffffff !important;
-   font-weight: 700;
+/* Affichage des 2 colonnes d'informations client */
+#wpcf7-f162-p75-o1 .box-form-order {
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 20px;
+   gap: 10px;
 }
 
- /*couleurs boutons formulaire*/
+/* Suppression padding et bordure à gauche et ajout bordure en haut sur conteneur livraison */
+#wpcf7-f162-p75-o1 .box-delivery {
+   border-left: none;
+   border-top: 1px solid #ffffff;
+   padding-left: 0px;
+   padding-top: 30px;
 
-#nex-forms .btn-default {
-   background-color: #E0B9B4 !important;
+   }
 
-}
-#nex-forms .btn-default:hover {
-   background-color: #C02E44 !important;
-
-}
-
-
-/* positionnement boutons OK */
-#nex-forms .col-sm-3 {
-    width: 25%;
-    display: flex !important;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: flex-start;
+/* Suppression padding à droite sur conteneur infos */
+#wpcf7-f162-p75-o1 .box-infos {
+   padding-right: 0px;
 }
 
-
-/* #nex-forms .input-group-btn .btn .btn-default .bootstrap-touchspin-down {
-   display: flex !important;
-   flex-direction: column !important;
-   justify-content: space-between;
+/* Centrage et espacement des conteneurs de chaque variété */
+#wpcf7-f162-p75-o1 .quantities-boxes {
+   justify-content: center;
+   gap: 10px;
+   margin-right: 10px;
+   margin-left: 10px;
 }
-*/
+
+/* Titres page commander*/
+#wpcf7-f162-p75-o1 h3 { 
+   color: #ffffff;
+   text-align: center;
+}
+
+
+}
+
+
+/* devices (entre 881 et 992px) */
+@media (min-width: 881px) and (max-width: 992px) {
+   #wpcf7-f162-p75-o1 .box-delivery {
+      border-top: none;
+      padding-left: 0px;
+      padding-top: 0px;
+      }
+
+}
