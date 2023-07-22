@@ -101,8 +101,6 @@ body * {
    transition: none !important;
    transform: none !important; 
    color: #fff;
-      /* transition: transform 0.35s, opacity 0.35s ease-in-out; */
-      /* transform: translate3d(0, 24px, 0); */
   }
 
 
@@ -265,6 +263,13 @@ position: relative;
    border-color: white;
 }
 
+
+#wpcf7-f162-p75-o1 .cf7-order-form h3 {
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+
 /* Couleur des titres */
 #wpcf7-f162-p75-o1 h3 { 
    color: #ffffff;
@@ -361,13 +366,9 @@ position: relative;
    height: 56px;
    width: 100px;
 }
-
-#wpcf7-f162-p75-o1 .btn-ok:visited  {
-   background-color : #E0B9B4;
-   }
    
 /* Redimensionnement des champs nombres */
-#wpcf7-f162-p75-o1 .quantities-boxes .wpcf7-number {
+#wpcf7-f162-p75-o1 .cf7-quantities {
    width: 51px !important;
    height: 56px;
    padding: 5px;
@@ -376,18 +377,6 @@ position: relative;
    text-align: center;
  }
 
-
-
-/* Conteneur boutons + et - */
-#wpcf7-f162-p75-o1 .quantities-buttons  {
-   margin: 0;
-}
-
-#wpcf7-f162-p75-o1 .quantities-buttons p {
-   display: flex;
-   margin-block-start: 0px;
-   flex-direction: column;
-}
 
 /* Boutons + */
 #wpcf7-f162-p75-o1 .btn-plus  {
@@ -406,7 +395,6 @@ position: relative;
    height: 28px;
    width: 31px;
    padding: 0;
-   margin-top: -24px;
    border-top-left-radius: 0;
    border-bottom-left-radius: 0;
    border-top-right-radius: 0;
@@ -470,21 +458,6 @@ position: relative;
 /******************* Media queries *************************/
 /* ------------------------------------------------------- */
 
-/* Small devices (entre 481 et 544px) */
-@media (min-width: 481px) and (max-width: 544px) {
-
-   #wpcf7-f162-p75-o1 .btn-minus  {
-      margin-top: -18px;
-       }
-
-}
-@media (min-width: 544px) and (max-width: 921px) {
-
-   #wpcf7-f162-p75-o1 .btn-minus  {
-      margin-top: -21.5px;
-       }
-
-}
 
 @media (max-width: 921px) {
 /*header*/
@@ -637,9 +610,9 @@ padding-top: 30px;
 @media (max-width: 480px) { 
    
 
-#wpcf7-f162-p75-o1 .btn-minus  {
+/*#wpcf7-f162-p75-o1 .btn-minus  {
    margin-top: -18px;
-}
+}*/
 
 
 .separator-team {
