@@ -35,8 +35,6 @@ body * {
     font-weight: 700;
  }
 
-
-
 /* bouton commander */
 .ast-custom-button {
     color: #ffffff !important;
@@ -57,13 +55,11 @@ body * {
 /* ------------------------------------------------------ */
 /* FOOTER */
 /* ------------------------------------------------------ */
-
   /* footer */
 
   .site-below-footer-wrap {
-    background-color: #ffffff;
-    height: 60px;
- }
+   height: 60px;
+}
 
   /* Footer lien */
 
@@ -87,20 +83,17 @@ body * {
 /* PAGE ACCUEIL */
 /* ------------------------------------------------------ */
 
-  /* positionnement de la cannette de boisson au 1er plan */
-
-.drink {
+  /* positionnement de la cannette de boisson */
+  .drink {
 	position: absolute;
-	z-index: 2;
  }
-
 
 
 /* supprimer effet au survol sur le texte en superposition des images */
 .wp-block-uagb-image--layout-overlay__inner .uagb-image-heading {
    transition: none !important;
    transform: none !important; 
-   color: #fff;
+   color: #ffffff;
   }
 
 
@@ -115,6 +108,7 @@ body * {
 	margin-bottom: 0px !important;
 }
 
+/* Espacements entre titres et séparateurs */
 .container-customer-reviews {
    padding-top: 80px !important;
 }
@@ -123,6 +117,8 @@ body * {
    padding-top: 80px !important;
 }
 
+
+/* Séparateur incurvé sous canette */
 .separator-plants-energy {
    z-index: 2;
    position: relative;
@@ -135,35 +131,79 @@ body * {
 }
 
 
-.container-tastes {
-
-
-}
-
+/* /////////////////////////////////////////////////// */
+/* PAGE NOUS RENCONTRER */
+/* ////////////////////////////////////////////////// */
 
 /* ------------------------------------------------------ */
-/* PAGE NOUS CONTACTER */
+/* conteneur nous rencontrer */
 /* ------------------------------------------------------ */
-.container-global-team {
-   position:relative;
+.container-global-meet {
+   display: grid; 
+   grid-template-columns: minmax(50px, 1fr) 2fr minmax(50px, 1fr);
+   grid-template-rows: auto auto;
+   grid-template-areas:
+   "a b ."
+   ". c .";
+   column-gap: 0 !important;
 }
 
-.team {
-   display: flex !important;
-   flex-direction: row !important;
-   align-items: center;
-   justify-content: space-around !important;
-   flex-wrap: wrap !important;
-   margin: 0% 15% 5% 15%;
+.container-title-meet {
+   grid-area: b;
+   align-self: end;
+   padding: 50px 0 0 1px!important;
 }
 
-.team-title {
-   margin-top: 140px !important;
+.container-txt-meet {
+   grid-area: c;
 }
 
-.team-member {
-   width: auto !important;
+.container-txt-meet p {
+   padding: 0 !important;
+   
 }
+
+.meet-plant {
+   display: flex;
+   grid-area: a;
+   justify-content: flex-end;
+   padding-top: 20px;
+   margin-bottom: 0;
+ }
+
+   
+/* ------------------------------------------------ */
+/* conteneur l'équipe */
+/* ------------------------------------------------ */
+
+   .title-team {
+      grid-area: a;
+      align-self: center;
+      margin-top: 100px !important;
+   }
+   
+   .container-member1-team {
+      grid-area: b;
+   }
+   
+   .container-member2-team {
+      grid-area: c;
+   }
+   
+   .container-member3-team {
+      grid-area: d;
+   }
+   
+   
+   .container-team-plant {
+      grid-area: e;
+      align-self: end;
+      flex-direction: row !important;
+      padding: 0 !important;
+   
+    }   
+
+/* Séparateur incurvé équipe */
 
 .separator-team {
    border-bottom-left-radius: 30% 100% !important;
@@ -174,37 +214,10 @@ body * {
    background: #ECE2DA;
 }
 
-
-/* Positionnement et taille de l'image de la plante du conteneur équipe */
-.team-plant {
-   position:absolute;
-   height: 219px;
-   width: 191px;
-   right: 50px;
-   bottom: -2px;
-   margin-left: 50px;
-}
-
-/* conteneur nous rencontrer */
-.container-meet-txt {
-   padding-top: 0 !important;
-   padding-bottom: 10px !important;
-}
-.container-meet-title-and-plant {
-   position: relative;
-   margin-top: 150px;
-}
-
-.meet-plant {
-   position: absolute;
-   left: -315px;
-   bottom: -10px;
-
-}
-
-.meet-title {
-   position: absolute;
-
+/* Conteneur du formulaire de contact */
+.container-global-contact {
+   padding-top: 50px !important;
+   padding-bottom: 0 !important;
 }
 
 /* ------------------------------------------------------- */
@@ -227,11 +240,8 @@ body * {
    display: flex;
    flex-direction: column;
    align-items: center;
+   margin-bottom: 0;
 }
-
-/*.container-global-contact {
-position: relative;
-}*/
 
 /* Positionnement et taille de l'image des feuilles du formulaire de contact */
 .leaves {
@@ -244,6 +254,7 @@ bottom: 35px;
 left: -70px;
 }
 
+/* Superposition textarea et feuilles */
 .superposed {
 position: relative;
 }
@@ -257,21 +268,26 @@ position: relative;
 /* contact form 7 : formulaire de précommande*/
 /* ------------------------------------------------------- */
 
-/* Bordure du haut vos commandes */
+.your-order {
+   margin-top: 30px;
+}
+
+/* Bordure du haut vos commandes + marges */
 #wpcf7-f162-p75-o1 .cf7-order-form { 
    border-top: 1px solid;
    border-color: white;
+   margin: 10px;
 }
 
 
-#wpcf7-f162-p75-o1 .cf7-order-form h3 {
-   margin-top: 30px;
+#wpcf7-f162-p75-o1 .cf7-order-form h2 {
    margin-bottom: 30px;
 }
 
 
+
 /* Couleur des titres */
-#wpcf7-f162-p75-o1 h3 { 
+#wpcf7-f162-p75-o1 h2 { 
    color: #ffffff;
 }
 
@@ -339,12 +355,7 @@ position: relative;
    justify-content: center;
 }
 
-#wpcf7-f162-p75-o1 .superposed-elements {
-
-
-}
-
-#wpcf7-f162-p75-o1 .superposed-elements h2 {
+#wpcf7-f162-p75-o1 .superposed-elements h3 {
    font-size: 20px;
    color: #ffffff;
 }
@@ -429,22 +440,21 @@ position: relative;
    padding-left: 30px;
    }
 
+/* supprimer marge du bas sous champs email et ville */
+.box-field p {
+   margin-bottom: 0 !important;
+}
+
 /* Padding à droite sur conteneur infos */
 #wpcf7-f162-p75-o1 .box-infos {
    padding-right: 30px;
 }
 
-/* Suppression de la marge du bas sous le champ ville */
-#wpcf7-f162-p75-o1 .city p {
-   margin-bottom: 0px;
-}
-
-
  /* Bouton commander */
 #wpcf7-f162-p75-o1 .button-order {
    display: flex;
    justify-content: center;
-   margin-top: 30px;
+   margin-top: 50px;
 }
 
 .button-order input {
@@ -460,8 +470,10 @@ position: relative;
 
 
 @media (max-width: 921px) {
-/*header*/
 
+/* ------------------------------------------------ */
+/* Header */
+/* ------------------------------------------------ */
 .ast-header-button-1 {
    height: 48px;
 }
@@ -476,11 +488,14 @@ position: relative;
 }
 .ast-custom-button:hover {
    background-color: transparent;
+}  
 }
 
-   
-}
+/* ----------------- */
+/* PAGE COMMANDER */
+/* ----------------- */
 
+/*Ajout padding en haut-bas + suppression padding droite-gauche*/
 
 @media (min-width: 320px) and (max-width: 992px){ 
    .page-id-75 .wp-block-group {
@@ -498,21 +513,6 @@ padding-top: 30px;
 }
 
 
-/* Affichage des 2 colonnes d'informations client */
-#wpcf7-f162-p75-o1 .box-form-order {
-   flex-wrap: wrap;
-   justify-content: center;
-   margin: 20px;
-   gap: 20px;
-}
-
-
-
-/* Suppression padding à droite sur conteneur infos */
-#wpcf7-f162-p75-o1 .box-infos {
-   padding-right: 0px;
-}
-
 /* Centrage et espacement des conteneurs de chaque variété */
 #wpcf7-f162-p75-o1 .quantities-boxes {
    justify-content: center;
@@ -521,7 +521,7 @@ padding-top: 30px;
 }
 
 /* Titres page commander*/
-#wpcf7-f162-p75-o1 h3 { 
+#wpcf7-f162-p75-o1 h2 { 
    color: #ffffff;
    text-align: center;
 }
@@ -535,53 +535,14 @@ padding-top: 30px;
 /* /////////////////////////////////////////  */
 @media (max-width: 350px) { 
 
-
-   .meet-title {
-      padding-left: 20px !important;
-      padding-right: 20px !important;
-   }
-   .meet-plant {
-      left: -50px;
-      bottom: 5px;
-      width: 70px;
-  }
-
-
-  .team-plant {
-   right: -10px;
-}
-
 .container-plants-energy p {
    padding-left: 40px !important;
    padding-right: 40px !important;
 }
 
-
 /* ------------------------------------------------------- */
 /* contact form 7 */
 /* ------------------------------------------------------- */
-
-
-   /* Affichage des 2 colonnes d'informations client une sous l'autre */
-   #wpcf7-f162-p75-o1 .box-form-order {
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 20px;
-      gap: 20px;
-   }
-   
-   /* Suppression padding à droite sur conteneur infos */
-   #wpcf7-f162-p75-o1 .box-infos {
-      padding-right: 0px;
-   }
-
-/* Suppression padding et bordure à gauche et ajout bordure en haut sur conteneur livraison */
-   #wpcf7-f162-p75-o1 .box-delivery {
-      border-left: none;
-      border-top: 1px solid #ffffff;
-      padding-left: 0px;
-      padding-top: 30px;
-   }
    
    .button-order input {
       margin-left: 0;
@@ -597,7 +558,7 @@ padding-top: 30px;
 }
 
    /* Titres page commander*/
-   #wpcf7-f162-p75-o1 h3 { 
+   #wpcf7-f162-p75-o1 h2 { 
       text-align: center;
    }
 
@@ -607,20 +568,9 @@ padding-top: 30px;
 /* /////////////////////////////////////////  */
 /* Ecrans téléphones (max 480px) */
 /* /////////////////////////////////////////  */
+
 @media (max-width: 480px) { 
    
-
-/*#wpcf7-f162-p75-o1 .btn-minus  {
-   margin-top: -18px;
-}*/
-
-
-.separator-team {
-   border-bottom-left-radius: 70% 100% !important;
-   border-bottom-right-radius: 70% 100% !important;
-}
-
-
 /* ------------------------------------------------------ */
 /* PAGE ACCUEIL */
 /* ------------------------------------------------------ */
@@ -630,50 +580,21 @@ padding-top: 30px;
 }
 
 /* ------------------------------------------------------ */
-/* PAGE NOUS CONTACTER */
+/* PAGE NOUS RENCONTRER */
 /* ------------------------------------------------------ */
-/* conteneur nous rencontrer */
 
-.container-meet-txt {
-   margin-bottom: 10px !important;
-}
-
-.container-meet-title-and-plant {
-   position: relative;
-   margin-left: 10px;
-   margin-top: 30px;
-}
-
-.meet-plant {
-   position: absolute;
-   bottom: -10px;
-   width: 80px;
-}
-
-
-
-.meet-title h2 {
-   margin-bottom: -20px;
-   }
-
-
-.container-global-meet {
-
-}
-
+/* ------------------------------------------------ */
 /* conteneur l'équipe */
+/* ------------------------------------------------ */
 
-/* Positionnement et taille de l'image de la plante du conteneur équipe */
-.team-plant {
-   height: 135px;
-   width: 120px;
-   transform: rotate(30deg);
+.separator-team {
+   border-bottom-left-radius: 70% 100% !important;
+   border-bottom-right-radius: 70% 100% !important;
 }
 
-.team-title {
-   margin-top: 60px !important;
-   margin-bottom: -30px !important;
-
+.container-team-plant {
+   justify-content: center !important;
+   margin-bottom: -10px !important;
 }
 
 /* ------------------------------------------------------- */
@@ -692,97 +613,72 @@ padding-top: 30px;
    bottom: 20px;
 }
 
-
-
-/* ------------------------------------------------------ */
-/* PAGE COMMANDER */
-/* ------------------------------------------------------ */
-
-   /* Redimensionnement de la taille des champs dans infos et livraison */
-   #wpcf7-f162-p75-o1 .champs {
-     display: flex;
-     height: 71px;
-     width: 100%;
-  }
-
 }
 
-/* /////////////////////////////////////////  */
-/* Ecrans téléphones (entre 350px et 480px) */
-/* /////////////////////////////////////////  */
-
-@media (min-width: 350px) and (max-width: 480px) {
-   .meet-title {
-      padding-left: 50px !important;
-      padding-right: 50px !important;
-   }
-
-   .meet-plant {
-      left: -30px;
-  }
-
-  .team-plant {
-   right: 5px;
-}
-
-}
-
-
-/* devices (entre 826 et 992px) */
-@media (min-width: 826px) and (max-width: 992px) {
-/* Padding et bordure à gauche sur conteneur livraison */
-#wpcf7-f162-p75-o1 .box-delivery {
-   border-left: 1px solid;
-   border-color: #ffffff;
-   padding-left: 20px;
-   }
-   }
-
-/* devices (entre 826 et 847px) */
-@media (min-width: 826px) and (max-width: 847px) {
- /* Redimensionnement de la taille des champs dans infos et livraison */
- #wpcf7-f162-p75-o1 .champs {
-   display: flex;
-   height: 71px;
-   width: 375px;
-}
-}
-
-/* devices (entre 320 et 825px) */
-@media (min-width: 320px) and (max-width: 825px) {
-
-/* Suppression padding et bordure à gauche et ajout bordure en haut sur conteneur livraison */
-#wpcf7-f162-p75-o1 .box-delivery {
-   border-left: none;
-   border-top: 1px solid #ffffff;
-   padding-left: 0px;
-   padding-top: 30px;
-
-   }
-
-
-
-}
 
 /* /////////////////////////////////////////  */
 /* Ecrans téléphones paysages (entre 481px et 767px) */
 /* /////////////////////////////////////////  */
 
+/* --------------------- */
+/* PAGE NOUS RENCONTRER */
+/* --------------------- */
+
 @media (min-width: 481px) and (max-width: 767px) {
-   .team-plant {
-      right: 5px;
-      height: 150px;
-      width: 140px;
+
+   .container-global-team {
+      display: grid; 
+      /*grid-template-columns: minmax(191px, 1fr) minmax(176px, 1fr) minmax(176px, 1fr) minmax(191px, 1fr);*/
+      grid-template-columns: repeat(2, minmax(191px, 1fr));
+      grid-template-rows: auto auto auto;
+      grid-template-areas:
+      "a a"
+      "b c"
+      "d e";
+      column-gap: 0 !important;
+      padding-left: 5px !important;
+      padding-right: 5px !important;
+      padding-top: 0px!important;
+      padding-bottom: 0px !important;
+   }   
+   
+   .container-team-plant {
+      justify-content: flex-start !important;
    }
-
-   .meet-plant {
-      left: -50px;
-      bottom: 20px;
-      width: 100px;
-
-}
 }
 
+
+/* --------------------- */
+/* PAGE NOUS RENCONTRER */
+/* --------------------- */
+
+/* /////////////////////////////////////////  */
+/* Ecrans supérieurs à 1023px */
+/* /////////////////////////////////////////  */
+
+/* ------------------------------------------------ */
+/* conteneur l'équipe */
+/* ------------------------------------------------ */
+
+@media (min-width: 1024px) { 
+   
+   .container-global-team {
+      display: grid; 
+      grid-template-columns: minmax(191px, 1fr) minmax(176px, 1fr) minmax(176px, 1fr) minmax(176px, 1fr) minmax(191px, 1fr);
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas:
+      ". a a a ."
+      ". b c d ."
+      ". b c d e"
+      ". . . . e";
+   
+      column-gap: 0 !important;
+   }
+   .container-team-plant {
+      justify-content: flex-start !important;
+   }
+   
+   }
 
 /* /////////////////////////////////////////  */
 /* Ecrans tablettes (entre 768px et 1023px) */
@@ -790,42 +686,85 @@ padding-top: 30px;
 
 @media (min-width: 768px) and (max-width: 1023px) {
 
-   .team-plant {
-      height: 185px;
-      width: 170px;
-      right: 10px;
+/* ------------------------------------------------ */
+/* conteneur l'équipe */
+/* ------------------------------------------------ */
+.container-global-team {
+   display: grid; 
+   grid-template-columns: minmax(191px, 1fr) minmax(176px, 1fr) minmax(176px, 1fr) minmax(191px, 1fr);
+   grid-template-rows: auto auto auto auto auto;
+   grid-template-areas:
+   ". a a ."
+   ". b c ."
+   ". d d ."
+   ". d d e"
+   " . . . e";
+   column-gap: 0 !important;
+   padding-left: 5px !important;
+   padding-right: 5px !important;
+   padding-top: 0px!important;
+   padding-bottom: 0px !important;
+}   
+
+.container-team-plant {
+   justify-content: flex-start !important;
+}
+
+}
+
+
+/* /////////////////////////////////////////  */
+/* Ecrans de + de 922px */
+/* /////////////////////////////////////////  */
+
+/* ----------------- */
+/* PAGE ACCUEIL */
+/* ----------------- */
+
+@media (min-width: 922px) {
+/* Taille des prénoms des clients */
+.customers-names {
+   font-size: 30px !important;
+}
+}
+
+
+/* /////////////////////////////////////////  */
+/* Ecrans de moins de 867px */
+/* /////////////////////////////////////////  */
+
+/* ----------------- */
+/* PAGE COMMANDER */
+/* ----------------- */
+
+@media (max-width: 867px) {
+
+   #wpcf7-f162-p75-o1 .box-form-order {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
   }
-  .meet-plant {
-   left: -330px;
-   bottom: -10px;
+
+/* Suppression padding à droite sur conteneur infos */
+#wpcf7-f162-p75-o1 .box-infos {
+   padding-right: 0px; 
+   padding-bottom: 50px;
+}
+
+/* Suppression padding et bordure à gauche et ajout bordure en haut sur conteneur livraison */
+#wpcf7-f162-p75-o1 .box-delivery {
+   border-left: none;
+   padding-left: 0px;
+   border-top: 1px solid #ffffff;
+   padding-top: 30px;
+}
+
+ /* Redimensionnement de la taille des champs dans infos et livraison */
+ #wpcf7-f162-p75-o1 .champs {
+   height: 71px;
+   min-width: 250px;
+   width: 100%;
 }
 
 }
-
-/* /////////////////////////////////////////  */
-/* Ecrans tablettes (entre 977px et 1023px) */
-/* /////////////////////////////////////////  */
-
-@media (min-width: 977px) and (max-width: 1023px) {
-
-   .team-plant {
-      height: 195px;
-   }
-
-
-}
-
-/* /////////////////////////////////////////  */
-/* Ecrans (entre 1024px et 1200px) */
-/* /////////////////////////////////////////  */
-
-@media (min-width: 1024px) and (max-width: 1200px) {
-
-   .team-plant {
-         right: 10px;
-         transform: rotate(20deg);
-         bottom: 10px;
-      }
-
-
-}
+   

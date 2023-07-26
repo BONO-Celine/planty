@@ -13,12 +13,12 @@
  */
 define( 'CHILD_THEME_PLANTY_VERSION', '1.0.0' );
 
-/**
- * Enqueue styles
- */
-function child_enqueue_styles() {
+/* Enqueue styles */
 
+function child_enqueue_styles() {
+    /* Enqueue style (charger css du thème parent) */
 	wp_enqueue_style( 'planty-theme-css', get_stylesheet_directory_uri() . '/style.css', array('astra-theme-css'), CHILD_THEME_PLANTY_VERSION, 'all' );
+    /* Enqueue style (charger le fichier css du dossier CSS personnalisé)*/
 	wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/theme.css', array(), filemtime(get_stylesheet_directory() . '/css/theme.css'));
 
 }
